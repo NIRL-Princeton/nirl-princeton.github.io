@@ -6,8 +6,42 @@
       src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous">
-    </script>
-    <script src="/js/template.js"></script>
+        </script>
+<header class="fl bg-deep-green w-100 pt4-ns pb3-ns pl5">
+
+<div class="bg-dark-green pv0">
+  <h1 class="black-70 pv3 ph4 f-headline-m">
+    <a class="link hover-gold white dib mr3" href="/" title="NIRL">NIRL &#8212; New Instrument Research Lab
+      <div class="fw4 f4">at Princeton University</div>
+    </a>
+  </h1>
+  </div>
+  
+  <script>
+      function checkHref() {
+          if (window.location.href == $(".navOption1").prop("href")) 
+              $(".navOption1").removeClass("white").addClass("gold")
+          else if (window.location.href == $(".navOption2").prop("href")) 
+              $(".navOption2").removeClass("white").addClass("gold")
+          else if (window.location.href == $(".navOption3").prop("href")) 
+              $(".navOption3").removeClass("white").addClass("gold")
+          else if (window.location.href.includes("/tabs/leaf/"))
+              $(".navOption4").removeClass("white").addClass("gold")
+      }
+  </script>
+
+<nav class="pv0 ph4 f5 fw5 ttu tracked">
+  <a class="navOption1 link hover-gold white dib mr6" href="/" title="Home">&#187;Home&#171;</a>
+  <a class="navOption2 link hover-gold white dib mr6" href="/tabs/projects.html" title="Projects">&#187;Projects&#171;</a>
+      <a class="navOption3 link hover-gold white dib mr6" href="/tabs/papers.html" title="Papers">&#187;Papers&#171;</a>
+      <a class="navOption4 link hover-gold white dib mr6" href="/tabs/leaf.html" title="LEAF">&#187;LEAF&#171;</a>
+      <script>checkHref()</script>
+<!-- 		<a class="link hover-gold white dib mr6" href="/tabs/people.html" title="People">People</a> -->
+<!-- 		<a class="link hover-gold white dib" href="/tabs/contact.html" title="Contact">Contact</a> -->
+</nav>
+
+</header>
+<br>
     <style>
       a 
       {
@@ -59,7 +93,7 @@
       <div class="cf mw-80 pl5 left center-y">
 
         <div class="fl ma3">
-          <a href="http://www.scattershot.org/news.htm">
+          <a href="http://www.scattershot.org/">
             <article class="dt w-100 mt2" href="#0">
               <div class="dtc w3 w4-ns h3 h4-ns v-mid">
                 <img src="/img/jeff.png" class="db" alt="Jeff Snyder"/>
@@ -90,56 +124,61 @@
         
 <div class="fl ma3">
   <article class="dt w-100 mt2" href="#0">
-        Matt Wang<br>
-Mike Mulshine<br>
+Matt Wang '19, Research Specialist 2019-2021<br>
+Mike Mulshine '16, Research Specialist 2016-2019<br>
 
-Aliayta Foon Dancoes<br>
-Hannah Ishizaki<br>
-Liam Elliot<br>
-Yue Qiao<br>
-Genyuan Hu<br>
-Ryan Luke Johns<br>
-Cenk Ergun<br>
-Dharit Tantaviramanond<br>
-Emily Liushen<br>
-Paco Avila<br>
-Cara Giovanetti<br>
-Theo Trevisan<br>
-Sara Ryave<br>
-Joshua Warner<br>
-Myra Norton<br>
-Beyza Yazichi<br>
-Na’im Ahdieh<br>
-Sean D. Rucewicz <br>
-Lola Constantino<br>
-Christien Ayers<br>
-Ian Accetta<br>
-Rajeev Erramilli<br>
-Harry Lee-Rubin<br>
-Chloe Song<br>
-Reid Oda<br>
-Elaine Chou<br>
-Reid Oda<br>
-Gene Kogan<br>
-Yicheng Sun<br>
-Carolyn Chen<br>
-James Bartusek<br>
-Sanger Clark<br>
-Xinyue Hu<br>
-Alice Tang<br>
-Danny Ryan <br>
-Aatish Bhatia<br>
-Charlie Avis<br>
-Drew Wallace<br>
-        Jonathan Zong<br>
-        Eric Li<br>
+Aliayta Foon-Dancoes GS<br>
+Hannah Ishizaki GS<br>
+Genyuan Hu GS<br>
+Beyza Yazichi GS<br>
+Joshua Warner '26<br>
+Na’im Ahdieh '25<br>
+Liam Elliot GS'24<br>
+Yue Qiao GS'24<br>
+Sara Ryave '24<br>
+Myra Norton '24<br>
+Ian Accetta '24<br>
+Lola Constantino '23<br>
+Christien Ayers '23<br>
+Emily Liushen '22<br>
+Theo Trevisan '22<br>
+Cenk Ergun GS'20<br>
+Cara Giovanetti '20<br>
+Xinyue Hu, guest researcher 2020<br>
+Rajeev Erramilli '18<br>
+Alice Tang '18<br>
+Jonathan Zong '18<br>
+Eric Li '18<br>
+Chloe Song '17<br>
+Yicheng Sun '17<br>
+Drew Wallace '17<br>
+Carolyn Chen '16<br>
+Reid Oda GS'16<br>
+Elaine Chou '16<br>
+Paco Avila '16<br>
+Harry Lee-Rubin, summer intern 2016<br>
+Sanger Clark GS'16<br>
+Ryan Luke Johns GS'15<br>
+Dharit Tantaviramanond '15<br>
+Gene Kogan, guest researcher 2014-2015<br>
+Spencer Russell, guest researcher 2013-2014<br>
+Charlie Avis '14<br>
+Danny Ryan '13 <br>
+Aatish Bhatia, CST staff and guest researcher<br>
 
   </article>
 </div>
       </div>
     </section>
 
-    <footer></footer><script>getFooter()</script>
+    <footer class="pv4 ph3">
+      <div class="w-100">
+        <a class="dib mh3" href="https://www.princeton.edu/" title="princeton">
+          <img src="/img/PU1line.png" alt="Princeton University Logo"></img>
+        </a>
+        <span class="f6 db mh5 near-black">© 2024 The Trustees of Princeton University</span>
+      </div>
+    </footer>
 
   </body>
 </html>
